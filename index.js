@@ -24,7 +24,7 @@ async function criarConselhosAleatorios() {
 async function mudarConselhoEId() {
     try{
         objetoConselho = await criarConselhosAleatorios();
-        idDoConselho.innerText = `ADIVCE #${objetoConselho.slip.id}`;
+        idDoConselho.innerText = `CONSELHO #${objetoConselho.slip.id}`;
         conselho.innerText = `${objetoConselho.slip.advice}`;
     }catch(err){
         console.log(err);
